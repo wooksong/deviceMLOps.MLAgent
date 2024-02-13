@@ -39,4 +39,4 @@ jobs:
     - name: configure GBS
       run: cp .github/workflows/tizen.gbs.conf ~/.gbs.conf
     - name: run GBS
-      run: gbs build -A ${{ matrix.arch }}
+      run: gbs build -A ${{ matrix.arch }} --define "unit_test 1"
